@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Diaphragm House</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>The Diaphragm House</h1>
+  </header>
+
+  <nav>
+    <a onclick="showSection('home')">HOME</a>
+    <a onclick="showSection('about')">About Us</a>
+    
+    <div class="dropdown">
+      <a>Products ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="diaphragm.html" target="_blank">Diaphragms</a></li>
+        <li><a href="solenoid.html" target="_blank">Solenoid Valve</a></li>
+        <li><a href="coil.html" target="_blank">Solenoid Coil</a></li>
+        <li><a href="timer.html" target="_blank">Sequential Timer</a></li>
+      </ul>
+    </div>
+
+    <a onclick="showSection('upcoming products')">Upcoming Products</a>
+    <a onclick="showSection('vedio')">Vedio</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <section id="home" class="active">
+    <div class="container">
+      <h2>Types of Diaphragms</h2>
+      <div class="gallery">
+        <!-- Images go here -->
+      </div>
+
+      <h2>Brands</h2>
+      <div class="gallery">
+        <!-- Brands go here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>You can add company history, mission, and other details here.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 The Diaphragm House. All rights reserved.
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p><strong>Tel1:</strong> 91-9928369631</p>
+    <p><strong>Mobile Phone:</strong> +91-8949241014 <em>(Contact via WhatsApp)</em></p>
+    <p><strong>Email:</strong> <a href="mailto:kandoikapish@gmail.com">kandoikapish@gmail.com</a></p>
+    <p><strong>Address:</strong><br>
+      608, Building B, Yinyi Duhui Guoji,<br>
+      No.8, Lane 559, Youngor Avenue,<br>
+      Ningbo, Zhejiang, China<br>
+      Zip: 315153
+    </p>
+    <p><strong>Wechat:</strong> brandon1986</p>
+    <p><strong>Website:</strong> <a href="https://www.brandopneumatic.com" target="_blank">brandopneumatic.com</a></p>
+    <p><strong>Bossgoo Showroom:</strong> <a href="https://brandopneumatic.store.bossgoo.com" target="_blank">Visit Showroom</a></p>
+  </div>
+</section>
+
+</body>
+</html>
