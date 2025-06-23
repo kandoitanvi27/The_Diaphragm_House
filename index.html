@@ -16,14 +16,23 @@
     <a onclick="showSection('about')">About Us</a>
     
     <div class="dropdown">
-      <a>Products ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="diaphragm.html" target="_blank">Diaphragms</a></li>
-        <li><a href="solenoid.html" target="_blank">Solenoid Valve</a></li>
-        <li><a href="coil.html" target="_blank">Solenoid Coil</a></li>
-        <li><a href="timer.html" target="_blank">Sequential Timer</a></li>
+  <a>Products ▾</a>
+  <ul class="dropdown-menu">
+    <li><a onclick="showSection('solenoid')">Solenoid Valve</a></li>
+    <li class="nested-dropdown">
+      <a onclick="showSection('diaphragm')">Diaphragm ▸</a>
+      <ul class="dropdown-menu nested">
+        <li><a onclick="showSection('diaphragm-round')">Round Diaphragm</a></li>
+        <li><a onclick="showSection('diaphragm-flat')">Flat Diaphragm</a></li>
+        <li><a onclick="showSection('diaphragm-coated')">Coated Diaphragm</a></li>
       </ul>
-    </div>
+    </li>
+    <li><a onclick="showSection('coil')">Solenoid Coil</a></li>
+    <li><a onclick="showSection('timer')">Sequential Timer</a></li>
+  </ul>
+</div>
+
+
 
     <a onclick="showSection('upcoming products')">Upcoming Products</a>
     <a onclick="showSection('video')">Video</a>
@@ -51,10 +60,6 @@
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 The Diaphragm House. All rights reserved.
-  </footer>
-
   <script>
     function showSection(id) {
       document.querySelectorAll('section').forEach(sec => {
@@ -81,6 +86,76 @@
     <p><strong>Bossgoo Showroom:</strong> <a href="https://brandopneumatic.store.bossgoo.com" target="_blank">Visit Showroom</a></p>
   </div>
 </section>
+
+<section id="diaphragm">
+  <div class="container">
+    <h2>Diaphragm</h2>
+    <p>Our diaphragms are built with precision and durability to ensure optimal performance in industrial pulse jet systems. Available in multiple materials like NBR and Viton to suit various operational environments.</p>
+    <ul>
+      <li>Pulse Valve Diaphragm</li>
+      <li>NBR Diaphragm</li>
+      <li>Viton Diaphragm</li>
+    </ul>
+    <div class="gallery">
+      <!-- Optional: Add diaphragm product images here -->
+    </div>
+  </div>
+</section>
+
+<section id="solenoid">
+  <div class="container">
+    <h2>Solenoid Valve</h2>
+    <p>Details about solenoid valves go here.</p>
+  </div>
+</section>
+
+<section id="coil">
+  <div class="container">
+    <h2>Solenoid Coil</h2>
+    <p>Details about solenoid coils go here.</p>
+  </div>
+</section>
+
+<section id="timer">
+  <div class="container">
+    <h2>Sequential Timer</h2>
+    <p>Details about timers go here.</p>
+  </div>
+</section>
+
+<section id="diaphragm-round">
+  <div class="container">
+    <h2>Round Diaphragm</h2>
+    <p>Details about round diaphragms go here.</p>
+  </div>
+</section>
+
+<section id="diaphragm-flat">
+  <div class="container">
+    <h2>Flat Diaphragm</h2>
+    <p>Details about flat diaphragms go here.</p>
+  </div>
+</section>
+
+<section id="diaphragm-coated">
+  <div class="container">
+    <h2>Coated Diaphragm</h2>
+    <p>Details about coated diaphragms go here.</p>
+  </div>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => {
+      sec.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+  <footer>
+    &copy; 2025 The Diaphragm House. All rights reserved.
+  </footer>
 
 </body>
 </html>

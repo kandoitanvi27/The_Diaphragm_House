@@ -78,7 +78,7 @@ footer {
 }
 
 /* Dropdown styling */
-.dropdown {
+/* .dropdown {
   position: relative;
 }
 
@@ -108,6 +108,55 @@ footer {
 
 .dropdown-menu li a:hover {
   background-color: #555;
+} */
+
+/* Main dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style for nested dropdown */
+.nested-dropdown {
+  position: relative;
+}
+
+.nested-dropdown .dropdown-menu.nested {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  display: none;
+}
+
+.nested-dropdown:hover .dropdown-menu.nested {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
 }
 
 #contact p {
@@ -122,4 +171,12 @@ footer {
 
 #contact a:hover {
   text-decoration: underline;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
 }
