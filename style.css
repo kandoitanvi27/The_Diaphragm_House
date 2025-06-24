@@ -185,3 +185,41 @@ footer {
   transform: scale(1.1);
   background-color: #8c9cb2;
 }
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header-right {
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.header-right a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-right {
+    margin-top: 0.5em;
+    text-align: center;
+  }
+}
