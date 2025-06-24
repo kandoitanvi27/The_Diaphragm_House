@@ -2,13 +2,13 @@
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f4f5f5;
   color: #212529;
 }
 
 /* Header Styles */
 header {
-  background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('images/header-bg.jpg');
+  background: linear-gradient(rgba(43, 94, 170, 0.7), rgba(137, 155, 223, 0.7)), url('images/header-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ header {
 
 /* Navigation Bar */
 nav {
-  background-color: #34495e;
+  background-color: #115ca8;
   display: flex;
   justify-content: center;
   align-items: center;
