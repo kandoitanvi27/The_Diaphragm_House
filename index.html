@@ -50,7 +50,14 @@
             <li><a onclick="showSection('diaphragm-for-uflow-pulse-valve')">Uflow Type Pulse Valve</a></li>
           </ul>
         </li>
-        <li><a onclick="showSection('solenoid-coil')">Solenoid Coil</a></li>
+        <li class="nested-dropdown">
+          <a onclick="showSection('solenoid-coil')">Solenoid Coil ▸</a>
+          <ul class="dropdown-menu nested">
+            <li><a onclick="showSection('asco-type')">ASCO Type Solenoid Coil</a></li>
+            <li><a onclick="showSection('rotex-type')">Rotex Type Solenoid Coil</a></li>
+            <li><a onclick="showSection('maniks-type')">Maniks Type Solenoid Coil</a></li>
+          </ul>
+        </li>
         <li><a onclick="showSection('sequential-timer')">Sequential Timer</a></li>
         <li><a onclick="showSection('solenoid-valve')">Solenoid Valve</a></li>
       </ul>
